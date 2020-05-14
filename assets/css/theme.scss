@@ -18,7 +18,8 @@ $enable-rounded: false;
 
 // general
 body, input, button, select, optgroup, textarea {   
-    font-family:Sen;
+    // font-family:Sen;
+    font-family: 'Nanum Myeongjo', serif !important;
 }
 body {
     line-height:1.7;
