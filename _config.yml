@@ -1,13 +1,12 @@
 # Site
 name: "ppamppamman"
 title: "ppamppamman"
-description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+description: "안녕하세요 빰빰맨입니다"
+logo: 'assets/images/profile_character.jpeg'
+favicon: 'assets/images/profile_character.jpeg'
 baseurl: /
 google_analytics: 'UA-xxxxxxxx-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+disqus: 'ppamppamman.github.io'
 include: ["_pages"]
 permalink: /:title/
 email: ppamppamman@gmail.com
@@ -19,7 +18,7 @@ authors:
     display_name: ppamppamman
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: ppamppamman@gmail.com
-    web: https://resume.ppamppam.me/
+    web: http://resume.ppamppam.me/
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
   
 # Plugins
