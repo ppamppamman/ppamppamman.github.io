@@ -4,15 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 <title>The Observer - National Gallery of Art, Washington, United States | ppamppamman</title>
 
-<link rel="icon" href="/assets/images/profile_character.jpeg">
+<link rel="icon" href="/assets/images/profile_character.png">
 <link href="/assets/css/prism.css" rel="stylesheet">
 <link href="/assets/css/theme.css" rel="stylesheet">
 <script src="/assets/js/jquery.min.js"></script>
-
-
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>The Observer - National Gallery of Art, Washington, United States | ppamppamman</title>
@@ -29,7 +28,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-12-01T00:00:00+09:00" />
 <script type="application/ld+json">
-{"dateModified":"2019-12-01T00:00:00+09:00","datePublished":"2019-12-01T00:00:00+09:00","image":"http://localhost:4000/assets/images/1.jpg","url":"http://localhost:4000/the-observer/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/the-observer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/profile_character.jpeg"},"name":"sal"},"author":{"@type":"Person","name":"sal"},"description":"The National Gallery of Art, and its attached Sculpture Garden, is a national art museum in Washington, D.C., located on the National Mall, between 3rd and 9th Streets, at Constitution Avenue NW. Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress. Andrew W. Mellon donated a substantial art collection and funds for construction.","@type":"BlogPosting","headline":"The Observer - National Gallery of Art, Washington, United States","@context":"https://schema.org"}</script>
+{"dateModified":"2019-12-01T00:00:00+09:00","datePublished":"2019-12-01T00:00:00+09:00","image":"http://localhost:4000/assets/images/1.jpg","url":"http://localhost:4000/the-observer/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/the-observer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/profile_character.png"},"name":"sal"},"author":{"@type":"Person","name":"sal"},"description":"The National Gallery of Art, and its attached Sculpture Garden, is a national art museum in Washington, D.C., located on the National Mall, between 3rd and 9th Streets, at Constitution Avenue NW. Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress. Andrew W. Mellon donated a substantial art collection and funds for construction.","@type":"BlogPosting","headline":"The Observer - National Gallery of Art, Washington, United States","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -44,7 +43,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
-
 <!-- Begin Sidebar Navigation
 ================================================== -->
 
@@ -56,14 +54,42 @@
 <div id="blackover-nav" class="blackover"></div>
 <nav id="menu">
     <ul>
-        <h3>Navigation</h3>
+        <h3 id="typewrite"></h3>
+        
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About <span class="badge badge-primary">Memoirs Jekyll Theme</span></a></li>
-        <li><a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/">Get Memoirs</a></li>      
-        <li><a href="/contact">Contact</a></li>       
+        <li><a href="http://resume.ppamppam.me">About</a></li>
+        <li><a href="/posts">Posts</a></li>      
+        <li><a href="/contact">Contact</a></li>
     </ul>   
 </nav>
+<script>
+  let app = document.getElementById('typewrite');
 
+  let typewriter = new Typewriter(app, {
+      loop: true
+  });
+  
+  typewriter.typeString('자과대 건물에 컴공출신 범죄자가 숨어들었다.')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('A: 당신 컴공이지?')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('B: 아닌데요.')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('A: 2!=2는 참인가 거짓인가')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('B: 거짓이죠!')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('A: 끌고 가.')
+      .pauseFor(1000)
+      .deleteAll()
+      .start();
+
+</script>
 <script src="/assets/js/lunr.js"></script>
 
 <style>
@@ -97,7 +123,7 @@
     ================================================== -->
    
     <a class="navbar-brand" href="/">
-        <img src="/assets/images/profile_character.jpeg" alt="ppamppamman">
+        <img src="/assets/images/profile_character.png" alt="ppamppamman">
     </a>  
    
 
