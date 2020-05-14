@@ -45,7 +45,7 @@
 
 <div class="sidebar">    
 </div>   
-<div class="nav-icon">
+<div class="nav-icon" onclick="typewriter.start();">
     <div class="hamburger-bar"></div>
 </div>
 <div id="blackover-nav" class="blackover"></div>
@@ -83,8 +83,7 @@
       .deleteAll()
       .typeString('A: 끌고 가.')
       .pauseFor(1000)
-      .deleteAll()
-      .start();
+      .deleteAll();
 
 </script>
 <script src="/assets/js/lunr.js"></script>
