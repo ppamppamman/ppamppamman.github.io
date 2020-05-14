@@ -412,7 +412,6 @@ img, img:hover {
     margin-left:auto;
     margin-right: auto;
     margin-top:50px;
-    margin-bottom:50px;
 }
 .image-shadow {   
     -webkit-box-shadow: 0 7px 50px 0 rgba(84,110,122,.15);
@@ -633,7 +632,7 @@ body.active-side {
 }
 @media (max-width: 768px) {
     .posttitle {
-        font-size:35px;
+        font-size:28px;
     }
     .blog-grid-container {
         grid-template-columns: 1fr;

@@ -3,7 +3,8 @@ layout: post
 title:  "닉네임 빰빰맨에 관하여."
 author: ppamppamman
 categories: [ daily ]
-image: assets/images/2.jpg
+image: assets/images/posts/200514/01.gif
+image_desc: "아이고 억울해" 
 ---
 
 최근 이런 이야기를 들었다.  
