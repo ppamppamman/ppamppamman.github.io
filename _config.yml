@@ -4,7 +4,6 @@ title: "ppamppamman"
 description: "안녕하세요 빰빰맨입니다"
 logo: 'assets/images/profile_character.jpeg'
 favicon: 'assets/images/profile_character.jpeg'
-baseurl: /
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'ppamppamman.github.io'
 include: ["_pages"]
@@ -13,7 +12,7 @@ email: ppamppamman@gmail.com
 
 # Authors
 authors:
-  sal:
+  ppamppamman:
     name: ppamppamman
     display_name: ppamppamman
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
@@ -43,7 +42,7 @@ paginate: 6
 paginate_path: /page:num/
     
 # Other
-highlighter: none
+highlighter: rouge
 markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
