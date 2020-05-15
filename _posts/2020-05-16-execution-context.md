@@ -17,10 +17,10 @@ function Company(){
   function ElsaSaid() {
     let work = new Work("하기 싫음");
     console.log("빰빰맨님 이 업무좀 해주세요.");
-    
-    function ppamppam_do() {
-      ppamppam.hardwork(work);
-    }
+    ppamppamMustDo(work);
+  }
+  function ppamppamMustDo(work) {
+    ppamppam.hardWork(work);
   }
   ElsaSaid();
 }
@@ -54,8 +54,8 @@ function Company(){
     ppamppamMustDo();
   }
   function ppamppamMustDo() {
-      ppamppam.hardWork(work);
-    }
+    ppamppam.hardWork(work);
+  }
   ElsaSaid();
 }
 ```  
