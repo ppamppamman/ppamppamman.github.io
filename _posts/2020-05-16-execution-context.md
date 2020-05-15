@@ -51,9 +51,9 @@ function Company(){
   function ElsaSaid() {
     let work = new Work("하기 싫음");
     console.log("빰빰맨님 이 업무좀 해주세요.");
-    ppamppamMustDo();
+    ppamppamMustDo(work);
   }
-  function ppamppamMustDo() {
+  function ppamppamMustDo(work) {
     ppamppam.hardWork(work);
   }
   ElsaSaid();
