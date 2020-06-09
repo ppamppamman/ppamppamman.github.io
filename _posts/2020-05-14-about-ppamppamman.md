@@ -2,7 +2,7 @@
 layout: post
 title:  "닉네임 빰빰맨에 관하여."
 author: ppamppamman
-categories: [ daily ]
+categories: [ Essay ]
 image: https://user-images.githubusercontent.com/13144573/82101013-39b6af00-9746-11ea-92c7-4fef54ed5b94.gif
 image_desc: "아이고 억울해" 
 ---

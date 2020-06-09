@@ -2,7 +2,7 @@
 layout: post
 title:  "Javascript 실행 컨텍스트"
 author: ppamppamman
-categories: [ TIL, Javascript ]
+categories: [ TIL, Dev, Javascript ]
 image: https://user-images.githubusercontent.com/13144573/82100972-23105800-9746-11ea-87e7-1b24a69b6d7d.png
 image_desc: "일기장 아님 유머블로그 아님 아무튼 아님" 
 ---
