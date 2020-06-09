@@ -6,6 +6,7 @@ categories: [ Dev, Javascript, WebComponent ]
 image: https://user-images.githubusercontent.com/13144573/84125886-29a99b00-aa78-11ea-86e7-e312ebfde382.png
 image_desc: "웹 컴포넌트" 
 ---
+
 ### 회사 입장에서 신입 개발자에게 기대하는 바는 무엇일까?  
 
 개발 스택이 회사에서 운용하는 시스템과 맞고, 경력같은 신입이라면 아주 좋겠지만, 그렇지 못한 나같은 신입은 어떻게 해야할까?
