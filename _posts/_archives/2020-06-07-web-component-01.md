@@ -94,5 +94,4 @@ B 회사에서 요구했던 것은 다음과 같았다.
 ---
 ## 참고문헌  
 [모질라 web docs - 웹 컴포넌트](https://developer.mozilla.org/ko/docs/Web/Web_Components)  
-[]()  
 [리액트 어플리케이션 구조 - 아토믹 디자인](https://ui.toast.com/weekly-pick/ko_20200213/)
