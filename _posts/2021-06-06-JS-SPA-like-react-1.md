@@ -3,7 +3,7 @@ layout: post
 title:  "리액트에서 쓰던 것을 직접 만들며 느끼는 것들 - (1)"
 author: ppamppamman
 categories: [ Dev, Javascript, React, SPA ]
-image: https://media.vlpt.us/images/ppamppamman/post/079c0a6b-9f6f-44e8-b12b-ca6b35c556f0/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B71.png
+image: https://media.vlpt.us/images/ppamppamman/post/7c46bee1-ba6f-4061-9977-bf60c421a699/thumbnail-js-react.png
 image_desc: "SPA 만들기" 
 ---
 
