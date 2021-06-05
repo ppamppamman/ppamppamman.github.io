@@ -14,7 +14,7 @@
 		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
     <!-- syntax.css -->
-    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <!-- <link rel="stylesheet" href="/assets/css/syntax.css"> -->
 
 		{% seo %}
 	</head>
@@ -47,13 +47,12 @@
 				<li><a target="_blank" href="http://resume.ppamppam.me">About</a></li>
 				<li><a href="{{ site.baseurl }}/categories">Categories of post</a></li>
 				<li><a href="{{ site.baseurl }}/project">Project</a></li>
-				<!-- <li><a href="{{ site.baseurl }}/contact">Contact</a></li> -->
 			</ul>
 		</nav>
 		<script>
-			let app = document.getElementById('typewrite');
+			const app = document.getElementById('typewrite');
 
-			let typewriter = new Typewriter(app, {
+			const typewriter = new Typewriter(app, {
 				loop: true,
 			});
 

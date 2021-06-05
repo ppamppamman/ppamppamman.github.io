@@ -31,16 +31,16 @@ image_desc: '데이터를 처음 다뤄보는 빰빰맨이다.'
 
 - 대전 승리 확률과 승리 확률에 미치는 유의미한 변수를 확인하여 로켓단이 승리하기 위한 큰그림을 제시한다.
 
-~~~python
+```python
 import numpy as np
 import pandas as pd
 import matplotlib as plt
 import seaborn as sns
 
 %matplotlib inline
-~~~
+```
 
-~~~python
+```python
 import random
 
 random.seed(1)
@@ -49,7 +49,7 @@ pokemon = pd.read_csv("./input/pokemon.csv")
 combat = pd.read_csv("./input/combats.csv")
 
 pokemon.head() #
-~~~
+```
 
 <div>
 <style scoped>
@@ -164,9 +164,9 @@ pokemon.head() #
 </table>
 </div>
 
-~~~python
+```python
 combat.head()
-~~~
+```
 
 <div>
 <style scoped>
@@ -227,28 +227,28 @@ combat.head()
 </table>
 </div>
 
-~~~python
+```python
 print("pokemon: " + str(pokemon.shape))
 print("combat: " + str(combat.shape))
-~~~
+```
 
     pokemon: (800, 12)
     combat: (50000, 3)
 
 ### 결측치 확인
 
-~~~python
+```python
 combat.isnull().sum()
-~~~
+```
 
     First_pokemon     0
     Second_pokemon    0
     Winner            0
     dtype: int64
 
-~~~python
+```python
 pokemon.isnull().sum()
-~~~
+```
 
     #               0
     Name            1
@@ -268,7 +268,7 @@ pokemon.isnull().sum()
 - 이름 없는 포켓몬도 하나 있다.
 - 결측지를 제거하면 분석에 대해 명확한 진행이 되지 않을 것 같아 결측치에 대한 처리를 삭제가 아닌 수정으로 진행하도록 한다.
 
-~~~python
+```python
 print("==== Name = NaN, 누구냐 넌 ==== ")
 
 if pokemon[pokemon['Name'].isnull()].size != 0:
@@ -282,7 +282,7 @@ else:
     print("이름이 비어있는 포켓몬이 없습니다.")
     # who.Name = "Primeape"
 
-~~~
+```
 
     ==== Name = NaN, 누구냐 넌 ====
          # Name    Type 1 Type 2  HP  Attack  Defense  Sp. Atk  Sp. Def  Speed  \
@@ -296,10 +296,10 @@ else:
 
 - 도감에 따르면, 망키와 가디 사이에는 성원숭이 있다. Type 1이 Fighting인 것을 보면 맞다.
 
-~~~python
+```python
 pokemon.loc[(pokemon['#'] ==  63), 'Name'] = "Primeape"
 pokemon[pokemon['#'] ==  63]
-~~~
+```
 
 <div>
 <style scoped>
@@ -354,7 +354,7 @@ pokemon[pokemon['#'] ==  63]
 </table>
 </div>
 
-~~~python
+```python
 totalWins = combat.Winner.value_counts() # 전체 승리
 countWins = combat.groupby('Winner').count()
 
@@ -364,7 +364,7 @@ countSecond = combat.groupby('Second_pokemon').count()
 print("Count by first winner shape: " + str(countFirst.shape))
 print("Count by second winner shape: " + str(countSecond.shape))
 print("Total Wins shape : " + str(totalWins.shape))
-~~~
+```
 
     Count by first winner shape: (784, 2)
     Count by second winner shape: (784, 2)
@@ -372,11 +372,11 @@ print("Total Wins shape : " + str(totalWins.shape))
 
 - 확인했을 때 이긴 포켓몬 수와 토탈 승리 수가 다르다. 한 포켓몬이 승리를 한번도 하지 못한 것 같다.
 
-~~~python
+```python
 find_losing_pokemon= np.setdiff1d(countFirst.index.values, countWins.index.values)-1
 losing_pokemon = pokemon.iloc[find_losing_pokemon[0],]
 print(losing_pokemon)
-~~~
+```
 
     #                 231
     Name          Shuckle
@@ -399,7 +399,7 @@ print(losing_pokemon)
 포켓몬GO에 이르러서는 단단지가 GO로켓단의 주축이 되었다. 알고보니 로켓단이 약하다는 것에 대한 고증이 이루어진 이벤트였던 것!  
 https://pokemongolive.com/post/gofestweeklychallenge-teamgorocket/?hl=ko
 
-~~~python
+```python
 numberOfWins = countWins.sort_index()
 numberOfWins['Total Fights'] = countFirst.Winner + countSecond.Winner
 numberOfWins['Win Percentage']= numberOfWins.First_pokemon/numberOfWins['Total Fights']
@@ -407,13 +407,13 @@ numberOfWins['Win Percentage']= numberOfWins.First_pokemon/numberOfWins['Total F
 
 results2 = pd.merge(pokemon, numberOfWins, right_index = True, left_on='#')
 results3 = pd.merge(pokemon, numberOfWins, left_on='#', right_index = True, how='left')
-~~~
+```
 
 - 패배 기준
 
-~~~python
+```python
 results3[np.isfinite(results3['Win Percentage'])].sort_values(by = ['Win Percentage']).head(10)
-~~~
+```
 
 <div>
 <style scoped>
@@ -649,9 +649,9 @@ results3[np.isfinite(results3['Win Percentage'])].sort_values(by = ['Win Percent
 
 - 승리 기준
 
-~~~python
+```python
 results3[np.isfinite(results3['Win Percentage'])].sort_values(by = ['Win Percentage'], ascending = False ).head(10)
-~~~
+```
 
 <div>
 <style scoped>
@@ -887,7 +887,7 @@ results3[np.isfinite(results3['Win Percentage'])].sort_values(by = ['Win Percent
 
 ### 시각화
 
-~~~python
+```python
 import matplotlib.pyplot as plt
 sns.set_color_codes("pastel")
 ax = sns.countplot(x="Type 1", hue="Legendary", data=results3)
@@ -895,19 +895,19 @@ plt.xticks(rotation= 90)
 plt.xlabel('Type 1')
 plt.ylabel('Total ')
 plt.title("Type 1 Pokemons")
-~~~
+```
 
     Text(0.5, 1.0, 'Type 1 Pokemons')
 
 ![png](output_23_1.png)
 
-~~~python
+```python
 ax = sns.countplot(x="Type 2", hue="Legendary", data=results3)
 plt.xticks(rotation= 90)
 plt.xlabel('Type 2')
 plt.ylabel('Total ')
 plt.title("Type 2 Pokemon")
-~~~
+```
 
     Text(0.5, 1.0, 'Type 2 Pokemon')
 
@@ -915,9 +915,9 @@ plt.title("Type 2 Pokemon")
 
 - 타입별 승률
 
-~~~python
+```python
 results3.groupby('Type 1').agg({"Win Percentage": "mean"}).sort_values(by = "Win Percentage")
-~~~
+```
 
 <div>
 <style scoped>
@@ -1029,16 +1029,16 @@ results3.groupby('Type 1').agg({"Win Percentage": "mean"}).sort_values(by = "Win
 
 - 산점도
 
-~~~python
+```python
 col = ['Type 1','HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Win Percentage']
 sns.pairplot(results3.loc[:,col].dropna())
-~~~
+```
 
     <seaborn.axisgrid.PairGrid at 0x7f90c373fa90>
 
 ![png](output_29_1.png)
 
-~~~python
+```python
 def correlation_matrix(df):
     from matplotlib import pyplot as plt
     from matplotlib import cm as cm
@@ -1057,7 +1057,7 @@ def correlation_matrix(df):
 
 correlation_matrix(results3.loc[:,col])
 # 레퍼런스 https://datascience.stackexchange.com/questions/10459/calculation-and-visualization-of-correlation-matrix-with-pandas
-~~~
+```
 
     /Users/jaeuk/Documents/ppamppamman/programmers-KDT/programmers_kdt_II/kdt-env/lib/python3.6/site-packages/ipykernel_launcher.py:12: UserWarning: FixedFormatter should only be used together with FixedLocator
       if sys.path[0] == '':
@@ -1068,10 +1068,10 @@ correlation_matrix(results3.loc[:,col])
 
 이 중 특징이 두드러지게 나타나는 speed에 대해서 확인해보면 다음과 같다
 
-~~~python
+```python
 sns.regplot(x="Speed", y="Win Percentage", data=results3, logistic=True).set_title("Speed vs Win Percentage")
 sns.lmplot(x="Speed", y="Win Percentage", data=results3, hue = 'Type 1',  logistic=True)
-~~~
+```
 
     <seaborn.axisgrid.FacetGrid at 0x7f90c1c8c780>
 

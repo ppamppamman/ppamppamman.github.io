@@ -18,5 +18,5 @@ group :jekyll_plugins do
     gem 'jekyll-figure'
     gem 'bootstrap', '~> 4.4.1'
     gem 'kramdown'
-    gem 'rouge'
+    gem 'rouge', '~> 3.26.0'
 end
