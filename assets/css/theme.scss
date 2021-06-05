@@ -690,6 +690,8 @@ body.active-side {
     }
     
     #menu ul {
+        width: 100%;
+        box-sizing: border-box;
         padding: 80px 30px 80px 30px;
     }
     .related-posts {
