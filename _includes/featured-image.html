@@ -6,8 +6,9 @@
     <img class="featured-image {% if page.imageshadow %} image-shadow {% endif %}" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
     {% endif %}
     {% if page.image_desc %}
-    <br>
+    <br><br>
     <span style="font-size:13px; color:grey"> {{ page.image_desc }}</span>
+    <br>
     {% endif %}
 </div>
 {% endif %}

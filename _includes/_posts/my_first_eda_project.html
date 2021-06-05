@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>EDA_1</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 		<style type="text/css">
 			pre {
 				line-height: 125%;
+        margin: 15px 0 !important;
 			}
 			td.linenos pre {
 				color: #000000;
@@ -39,7 +37,6 @@
 				background-color: var(--jp-cell-editor-active-background);
 			}
 			.highlight {
-				background: var(--jp-cell-editor-background);
 				color: var(--jp-mirror-editor-variable-color);
 			}
 			.highlight .c {
@@ -13838,7 +13835,7 @@ body.lm-mod-override-cursor * {
 			.CodeMirror {
 				position: relative;
 				overflow: hidden;
-				background: white;
+				background: #f5f2f0;
 			}
 
 			.CodeMirror-scroll {
@@ -15753,7 +15750,6 @@ THE SOFTWARE.
  * these things differently.
  */
 			.CodeMirror.cm-s-jupyter {
-				background: var(--jp-layout-color0);
 				color: var(--jp-content-font-color1);
 			}
 
@@ -16988,7 +16984,6 @@ better solution to this problem.
 				/* This is the non-active, default styling */
 				border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
 				border-radius: 0px;
-				background: var(--jp-cell-editor-background);
 			}
 
 			.jp-InputPrompt {
@@ -17349,7 +17344,6 @@ better solution to this problem.
 				width: var(--jp-private-notebook-dragImage-width);
 				height: var(--jp-private-notebook-dragImage-height);
 				border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
-				background: var(--jp-cell-editor-background);
 				overflow: visible;
 			}
 
@@ -17428,7 +17422,6 @@ better solution to this problem.
 
 			.jp-ActiveCellTool .jp-InputArea-editor {
 				flex: 1 1 auto;
-				background: var(--jp-cell-editor-background);
 				border-color: var(--jp-cell-editor-border-color);
 			}
 
@@ -17597,7 +17590,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 				--jp-content-line-height: 1.6;
 				--jp-content-font-scale-factor: 1.2;
 				--jp-content-font-size0: 0.83333em;
-				--jp-content-font-size1: 14px; /* Base font size */
+				--jp-content-font-size1: 16px; /* Base font size */
 				--jp-content-font-size2: 1.2em;
 				--jp-content-font-size3: 1.44em;
 				--jp-content-font-size4: 1.728em;
@@ -17627,7 +17620,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * Code font variables are used for typography of code and other monospaces content.
    */
 
-				--jp-code-font-size: 13px;
+				--jp-code-font-size: 16px;
 				--jp-code-line-height: 1.3077; /* 17px for 13px base */
 				--jp-code-padding: 5px; /* 5px for 13px base, codemirror highlighting needs integer px value */
 				--jp-code-font-family-default: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
@@ -18525,7 +18518,7 @@ Name: 230, dtype: object
 		<div class="jp-Cell-inputWrapper">
 			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-				<img src="https://cdn.bulbagarden.net/upload/thumb/c/c7/213Shuckle.png/1200px-213Shuckle.png" width="150px" style="margin: auto" />
+				<img src="https://pbs.twimg.com/media/D4hlPUZUwAYTZUV?format=jpg&name=medium" style="margin: auto" />
 				<center>Shuckle 단단지</center>
 				<center>정답은 단단지였습니다!</center>
 				<p>
