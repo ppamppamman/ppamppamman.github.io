@@ -447,6 +447,12 @@ img, img:hover {
         font-size: 15px;
         color: #d99338;
     }
+    code.language-plaintext, pre.language-plaintext {
+      background: none;
+      border: none;
+      color:#d99338 !important;
+      margin-bottom: none;
+    }
     code[class*="language-"], pre[class*="language-"] {
         margin-bottom:30px;
         // background: #000;
