@@ -448,9 +448,8 @@ img, img:hover {
         color: #d99338;
     }
     code[class*="language-"], pre[class*="language-"] {
-        font-size:15px;
         margin-bottom:30px;
-        background: #fff;
+        // background: #000;
         color:inherit;
     }
     div.code-toolbar > .toolbar a, div.code-toolbar > .toolbar button, div.code-toolbar > .toolbar span {
