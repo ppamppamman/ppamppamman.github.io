@@ -7,7 +7,7 @@ image: https://media.vlpt.us/images/ppamppamman/post/7c46bee1-ba6f-4061-9977-bf6
 image_desc: "SPA 만들기" 
 ---
 
-### ! CAUTION ! 글이 별로 재미가 없습니다
+### ⚠️ CAUTION ⚠️ 글이 별로 재미가 없습니다
 
 자바스크립트만으로 SPA 만들기를 공부하면서 개인적인 목표로는 리액트에서 사용하던 방식을 컨셉으로나마 이해하는 것이었다.
 

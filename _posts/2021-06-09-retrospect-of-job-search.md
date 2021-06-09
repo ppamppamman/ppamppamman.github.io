@@ -6,9 +6,9 @@ categories: [ Dev, Essay ]
 image: https://user-images.githubusercontent.com/13144573/121291583-79d56a80-c923-11eb-85f6-ae3ae9490977.jpeg
 image_desc: "젠장!"
 ---
+### ⚠️ CAUTION ⚠️ 06/09 기준 미완성 입니다
 
 ### 올해 첫 면접을 봤다!
-
 두근두근
 
 ![1333357662](https://user-images.githubusercontent.com/13144573/121291646-92458500-c923-11eb-9b87-9c3448130d30.gif)
