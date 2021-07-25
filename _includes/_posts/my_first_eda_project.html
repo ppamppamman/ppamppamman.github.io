@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>EDA_1</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 		<style type="text/css">
 			pre {
 				line-height: 125%;
+        margin: 15px 0 !important;
 			}
 			td.linenos pre {
 				color: #000000;
@@ -39,7 +37,6 @@
 				background-color: var(--jp-cell-editor-active-background);
 			}
 			.highlight {
-				background: var(--jp-cell-editor-background);
 				color: var(--jp-mirror-editor-variable-color);
 			}
 			.highlight .c {
@@ -13838,7 +13835,7 @@ body.lm-mod-override-cursor * {
 			.CodeMirror {
 				position: relative;
 				overflow: hidden;
-				background: white;
+				background: #f5f2f0;
 			}
 
 			.CodeMirror-scroll {
@@ -15753,7 +15750,6 @@ THE SOFTWARE.
  * these things differently.
  */
 			.CodeMirror.cm-s-jupyter {
-				background: var(--jp-layout-color0);
 				color: var(--jp-content-font-color1);
 			}
 
@@ -16988,7 +16984,6 @@ better solution to this problem.
 				/* This is the non-active, default styling */
 				border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
 				border-radius: 0px;
-				background: var(--jp-cell-editor-background);
 			}
 
 			.jp-InputPrompt {
@@ -17349,7 +17344,6 @@ better solution to this problem.
 				width: var(--jp-private-notebook-dragImage-width);
 				height: var(--jp-private-notebook-dragImage-height);
 				border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
-				background: var(--jp-cell-editor-background);
 				overflow: visible;
 			}
 
@@ -17428,7 +17422,6 @@ better solution to this problem.
 
 			.jp-ActiveCellTool .jp-InputArea-editor {
 				flex: 1 1 auto;
-				background: var(--jp-cell-editor-background);
 				border-color: var(--jp-cell-editor-border-color);
 			}
 
@@ -17597,7 +17590,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 				--jp-content-line-height: 1.6;
 				--jp-content-font-scale-factor: 1.2;
 				--jp-content-font-size0: 0.83333em;
-				--jp-content-font-size1: 14px; /* Base font size */
+				--jp-content-font-size1: 16px; /* Base font size */
 				--jp-content-font-size2: 1.2em;
 				--jp-content-font-size3: 1.44em;
 				--jp-content-font-size4: 1.728em;
@@ -17627,7 +17620,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * Code font variables are used for typography of code and other monospaces content.
    */
 
-				--jp-code-font-size: 13px;
+				--jp-code-font-size: 16px;
 				--jp-code-line-height: 1.3077; /* 17px for 13px base */
 				--jp-code-padding: 5px; /* 5px for 13px base, codemirror highlighting needs integer px value */
 				--jp-code-font-family-default: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
@@ -17899,7 +17892,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 	</head>
 	<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2>
 				<p>
@@ -17921,8 +17913,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 				<center><s>날아간다옹</s></center>
 			</div>
 		</div>
-		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
+		<div class="jp-Cell-inputWrapper">	
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h2 id="Purpose-of-executing-EDA">Purpose of executing EDA<a class="anchor-link" href="#Purpose-of-executing-EDA">&#182;</a></h2>
 				<ul>
@@ -17933,7 +17924,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -17952,7 +17942,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -17973,7 +17962,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
 
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
@@ -18095,7 +18083,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18110,7 +18097,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
 
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
@@ -18178,7 +18164,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18194,7 +18179,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 							<pre>
@@ -18208,7 +18192,6 @@ combat: (50000, 3)
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#44208;&#52769;&#52824;-&#54869;&#51064;">&#44208;&#52769;&#52824; &#54869;&#51064;<a class="anchor-link" href="#&#44208;&#52769;&#52824;-&#54869;&#51064;">&#182;</a></h3>
 			</div>
@@ -18231,7 +18214,6 @@ combat: (50000, 3)
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>
@@ -18248,7 +18230,6 @@ dtype: int64</pre
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18263,7 +18244,6 @@ dtype: int64</pre
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>
@@ -18287,7 +18267,6 @@ dtype: int64</pre
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<ul>
 					<li>이 값에서 Type 2에 Null값이 많은 이유는 포켓몬의 세대가 바뀌어오면서 (1세대 레드, 그린, 블루 -&gt; 2세대 골드, 실버 -&gt; 3세대 루비, 사파이어 ...) 메인 타입 말고 보조 타입을 정의하는 포켓몬이 생겨났기 때문이다. 보조타입이 없는 포켓몬에 대해서는 없는대로 진행하도록 한다.</li>
@@ -18298,7 +18277,6 @@ dtype: int64</pre
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18324,7 +18302,6 @@ dtype: int64</pre
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 							<pre>
@@ -18345,7 +18322,6 @@ dtype: int64</pre
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<ul>
 					<li>도감에 따르면, 망키와 가디 사이에는 성원숭이 있다. Type 1이 Fighting인 것을 보면 맞다.</li>
@@ -18355,7 +18331,6 @@ dtype: int64</pre
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18371,7 +18346,6 @@ dtype: int64</pre
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
@@ -18433,7 +18407,6 @@ dtype: int64</pre
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18456,7 +18429,6 @@ dtype: int64</pre
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 							<pre>
@@ -18471,7 +18443,6 @@ Total Wins shape : (783,)
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<ul>
 					<li>확인했을 때 이긴 포켓몬 수와 토탈 승리 수가 다르다. 한 포켓몬이 승리를 한번도 하지 못한 것 같다.</li>
@@ -18481,7 +18452,6 @@ Total Wins shape : (783,)
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18498,7 +18468,6 @@ Total Wins shape : (783,)
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 							<pre>
@@ -18523,9 +18492,8 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-				<img src="https://cdn.bulbagarden.net/upload/thumb/c/c7/213Shuckle.png/1200px-213Shuckle.png" width="150px" style="margin: auto" />
+				<img src="https://pbs.twimg.com/media/D4hlPUZUwAYTZUV?format=jpg&name=medium" style="margin: auto" />
 				<center>Shuckle 단단지</center>
 				<center>정답은 단단지였습니다!</center>
 				<p>
@@ -18536,8 +18504,7 @@ Name: 230, dtype: object
 		</div>
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 			<div class="jp-Cell-inputWrapper">
-				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+				<div class="jp-InputArea jp-Cell-inputArea">					
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18554,7 +18521,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#54056;&#48176;-&#44592;&#51456;">&#54056;&#48176; &#44592;&#51456;<a class="anchor-link" href="#&#54056;&#48176;-&#44592;&#51456;">&#182;</a></h3>
 			</div>
@@ -18562,7 +18528,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18577,7 +18542,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
@@ -18816,7 +18780,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#49849;&#47532;-&#44592;&#51456;">&#49849;&#47532; &#44592;&#51456;<a class="anchor-link" href="#&#49849;&#47532;-&#44592;&#51456;">&#182;</a></h3>
 			</div>
@@ -18824,7 +18787,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -18839,8 +18801,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
-
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
 								<style scoped>
@@ -19078,7 +19038,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h2 id="&#49884;&#44033;&#54868;">&#49884;&#44033;&#54868;<a class="anchor-link" href="#&#49884;&#44033;&#54868;">&#182;</a></h2>
 				<h3 id="&#53440;&#51077;&#48324;-&#54252;&#53011;&#47788;&#51032;-&#49688;">&#53440;&#51077;&#48324; &#54252;&#53011;&#47788;&#51032; &#49688;<a class="anchor-link" href="#&#53440;&#51077;&#48324;-&#54252;&#53011;&#47788;&#51032;-&#49688;">&#182;</a></h3>
@@ -19087,7 +19046,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19107,7 +19065,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>Text(0.5, 1.0, &#39;Pokemon MainType&#39;)</pre>
@@ -19115,7 +19072,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19130,7 +19086,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19149,7 +19104,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>Text(0.5, 1.0, &#39;Pokemon SubType&#39;)</pre>
@@ -19157,7 +19111,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19170,7 +19123,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#53440;&#51077;&#48324;-&#49849;&#47456;">&#53440;&#51077;&#48324; &#49849;&#47456;<a class="anchor-link" href="#&#53440;&#51077;&#48324;-&#49849;&#47456;">&#182;</a></h3>
 			</div>
@@ -19178,7 +19130,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19193,7 +19144,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 
 						<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 							<div>
@@ -19303,7 +19253,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<p>
 					이 정도로 정리가 된다.<br />
@@ -19314,7 +19263,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#49328;&#51216;&#46020;">&#49328;&#51216;&#46020;<a class="anchor-link" href="#&#49328;&#51216;&#46020;">&#182;</a></h3>
 				<p>산점도의 경우 메인타입을 기준으로 각 능력치를 산점도로 표현하였다.</p>
@@ -19323,7 +19271,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19339,7 +19286,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>&lt;seaborn.axisgrid.PairGrid at 0x7f90c513e208&gt;</pre>
@@ -19347,7 +19293,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19360,7 +19305,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#55176;&#53944;&#47605;">&#55176;&#53944;&#47605;<a class="anchor-link" href="#&#55176;&#53944;&#47605;">&#182;</a></h3>
 			</div>
@@ -19368,7 +19312,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19399,7 +19342,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 							<pre>
@@ -19413,7 +19355,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19426,7 +19367,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<p>이 중 특징이 두드러지게 나타나는 speed에 대해서 확인해보면 다음과 같다</p>
 			</div>
@@ -19434,7 +19374,6 @@ Name: 230, dtype: object
 		<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 			<div class="jp-Cell-inputWrapper">
 				<div class="jp-InputArea jp-Cell-inputArea">
-					<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 					<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 						<div class="CodeMirror cm-s-jupyter">
 							<div class="highlight hl-ipython3">
@@ -19450,7 +19389,6 @@ Name: 230, dtype: object
 			<div class="jp-Cell-outputWrapper">
 				<div class="jp-OutputArea jp-Cell-outputArea">
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
 
 						<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 							<pre>&lt;seaborn.axisgrid.FacetGrid at 0x7f90ad103198&gt;</pre>
@@ -19458,7 +19396,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19469,7 +19406,6 @@ Name: 230, dtype: object
 					</div>
 
 					<div class="jp-OutputArea-child">
-						<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 						<div class="jp-RenderedImage jp-OutputArea-output">
 							<img
@@ -19482,13 +19418,11 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<p>속도 능력치의 경우 승률에 있어 거의 비례하는 모습을 보여주고 있다.</p>
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h2 id="&#44208;&#47200;">&#44208;&#47200;<a class="anchor-link" href="#&#44208;&#47200;">&#182;</a></h2>
 				<p><a href="https://namu.wiki/w/로켓단">https://namu.wiki/w/로켓단</a> 문서에 따르면 로켓단이 사용한 포켓몬 개체와 그 수가 작성되어 있다.</p>
@@ -19512,7 +19446,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<ul>
 					<li>
@@ -19537,7 +19470,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h2 id="&#50668;&#45812;">&#50668;&#45812;<a class="anchor-link" href="#&#50668;&#45812;">&#182;</a></h2>
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeKAz6rmJjrHBfacuv0Dwm3h_ohjaZFY5rjw&usqp=CAU" width="50%" style="margin: auto" />
@@ -19545,7 +19477,6 @@ Name: 230, dtype: object
 			</div>
 		</div>
 		<div class="jp-Cell-inputWrapper">
-			<div class="jp-InputPrompt jp-InputArea-prompt"></div>
 			<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 				<h3 id="&#45149;">&#45149;<a class="anchor-link" href="#&#45149;">&#182;</a></h3>
 			</div>

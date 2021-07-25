@@ -13,17 +13,12 @@
 		<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet" />
 		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
-    <!-- syntax.css -->
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-
 		{% seo %}
 	</head>
 
 	{% if jekyll.environment == 'production' %}
 	<!-- change your GA id in _config.yml -->
-	<script>
-		// GA
-	</script>
+	
 	{% endif %} {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 	<body style="font-family: 'Nanum Myeongjo', serif !important">
 		<!-- defer loading of font and font awesome -->
@@ -41,19 +36,18 @@
 		<div id="blackover-nav" class="blackover"></div>
 		<nav id="menu">
 			<ul>
-				<h3 id="typewrite"></h3>
+				<h3 id="typewrite" style="height: 66px;"></h3>
 
 				<li><a href="{{ site.baseurl }}/">Home</a></li>
 				<li><a target="_blank" href="http://resume.ppamppam.me">About</a></li>
 				<li><a href="{{ site.baseurl }}/categories">Categories of post</a></li>
-				<li><a href="{{ site.baseurl }}/project">Project</a></li>
-				<!-- <li><a href="{{ site.baseurl }}/contact">Contact</a></li> -->
+				<!-- <li><a href="{{ site.baseurl }}/project">Project</a></li> -->
 			</ul>
 		</nav>
 		<script>
-			let app = document.getElementById('typewrite');
+			const app = document.getElementById('typewrite');
 
-			let typewriter = new Typewriter(app, {
+			const typewriter = new Typewriter(app, {
 				loop: true,
 			});
 

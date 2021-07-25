@@ -445,12 +445,17 @@ img, img:hover {
     }
     code {
         font-size: 15px;
-        color: #94918d;
+        color: #d99338;
+    }
+    code.language-plaintext, pre.language-plaintext {
+      background: none;
+      border: none;
+      color:#d99338 !important;
+      margin-bottom: none;
     }
     code[class*="language-"], pre[class*="language-"] {
-        font-size:15px;
         margin-bottom:30px;
-        background: #fff;
+        // background: #000;
         color:inherit;
     }
     div.code-toolbar > .toolbar a, div.code-toolbar > .toolbar button, div.code-toolbar > .toolbar span {
@@ -691,6 +696,8 @@ body.active-side {
     }
     
     #menu ul {
+        width: 100%;
+        box-sizing: border-box;
         padding: 80px 30px 80px 30px;
     }
     .related-posts {

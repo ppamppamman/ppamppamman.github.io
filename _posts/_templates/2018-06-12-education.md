@@ -12,17 +12,17 @@ Memoirs theme has Prism highlighter integrated. I will show you in this post a f
 
 #### HTML
 
-~~~html
+```html
 <li class="ml-1 mr-1">
     <a target="_blank" href="#">
     <i class="fab fa-twitter"></i>
     </a>
 </li>
-~~~
+```
 
 #### CSS
 
-~~~css
+```css
 .highlight .c {
     color: #999988;
     font-style: italic; 
@@ -31,11 +31,11 @@ Memoirs theme has Prism highlighter integrated. I will show you in this post a f
     color: #a61717;
     background-color: #e3d2d2; 
 }
-~~~
+```
 
 #### JS
 
-~~~js
+```js
 // alertbar later
 $(document).scroll(function () {
     var y = $(this).scrollTop();
@@ -45,24 +45,24 @@ $(document).scroll(function () {
         $('.alertbar').fadeOut();
     }
 });
-~~~
+```
 
 #### Python
 
-~~~python
+```python
 print("Hello World")
-~~~
+```
 
 #### Ruby
 
-~~~ruby
+```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-~~~
+```
 
 #### C
 
-~~~c
+```c
 printf("Hello World");
-~~~
+```
