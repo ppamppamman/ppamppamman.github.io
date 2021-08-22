@@ -2,6 +2,7 @@
 layout: post
 title:  "바보 같았던 올해 첫 면접에 대한 회고"
 author: ppamppamman
+date: "2021-06-09"
 categories: [ Dev, Essay ]
 image: https://user-images.githubusercontent.com/13144573/121291583-79d56a80-c923-11eb-85f6-ae3ae9490977.jpeg
 image_desc: "젠장!"

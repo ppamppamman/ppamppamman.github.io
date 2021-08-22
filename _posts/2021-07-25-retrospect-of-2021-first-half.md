@@ -2,6 +2,7 @@
 layout: post
 title: "나의 (아홉+1)수, 2021년 상반기 회고"
 author: ppamppamman
+date: "2021-07-25"
 categories: [Retrospect]
 image: https://user-images.githubusercontent.com/13144573/126914159-acf7f3c1-de87-476b-9cc4-8c92baad663f.png
 image_desc: '사람마다 아홉수가 사납지. - 박경리 토지'
