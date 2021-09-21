@@ -114,18 +114,16 @@ image_desc: '다들 준비 됐나? require("./dist/네_선장님.bundle.js");'
 
             > 이전부터 프런트엔드 개발 업무를 할 때 가장 많이 반복하는 작업은 텍스트 편집기에서 코드를 수정하고 저장한 뒤 브라우저에서 새로 고침을 누르는 것이었습니다. 그래야 화면에 변경된 내용을 볼 수 있었죠.
 
-            > 이외에도 웹 서비스를 개발하고 웹 서버에 배포할 때 아래와 같은 작업들을 해야 했습니다.HTML, CSS, JS 압축이미지 압축CSS 전처리기 변환
+            > 이외에도 웹 서비스를 개발하고 웹 서버에 배포할 때 아래와 같은 작업들을 해야 했습니다. HTML, CSS, JS 압축이미지 압축CSS 전처리기 변환
 
             > 이러한 일들을 자동화 해주는 도구들이 필요했습니다. 그래서 Grunt와 Gulp 같은 도구들이 등장했습니다.
 
         - 웹 애플리케이션의 빠른 로딩 속도와 높은 성능
 - 정리
     - 왜 ?
-        - 밥벌이
         - 모듈관리
         - 빌드 작업 자동화
         - 성능
-
 ---
 
 ## 왜 웹팩은 주류가 되었나 ?
@@ -148,7 +146,7 @@ image_desc: '다들 준비 됐나? require("./dist/네_선장님.bundle.js");'
     - 자바스크립트로 만든 모듈은 당연.
     - 스타일시트, 이미지, 폰트까지도 전부 모듈로 보기 때문에 import 구문을 사용하면 자바스크립트 코드 안으로 가져올수 있다.
 
-    - **[종류]**
+    **[종류]**
     - css-loader
         - css를 import 해서 쓰는 것을 모듈라이징하는 경우
     - style-loader
@@ -163,13 +161,13 @@ image_desc: '다들 준비 됐나? require("./dist/네_선장님.bundle.js");'
 - plugins
     - 번들된 결과물을 처리한다. 로더의 파일 처리 후 난독화한다든지 특정 텍스트를 추출한다든지의 역할
 
-    - **[종류]**
+    **[종류]**
     - [1. BannerPlugin](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html#61-bannerplugin)
     - [2. DefinePlugin](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html#62-defineplugin)
     - [3. HtmlWebpackPlugin](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html#63-htmlwebpackplugin)
     - [4. CleanWebpackPlugin](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html#64-cleanwebpackplugin)
     - [5. MiniCssExtractPlugin](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html#65-minicssextractplugin)
-- 좋아요! 자바스크립트에서 해봅시다!
+
 
 ### references
 
